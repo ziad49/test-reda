@@ -1,1 +1,1 @@
-[![Build Status](http://localhost:8080/view/all/job/test/badge/icon)](http://localhost:8080/view/all/job/test/)
+[![Build Status](https://kora-unblemishing-unadulteratedly.ngrok-free.dev/buildStatus/icon?job=test)](https://kora-unblemishing-unadulteratedly.ngrok-free.dev/job/test/)
