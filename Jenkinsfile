@@ -32,4 +32,14 @@ pipeline {
             }
         }
     }
+
+    post {
+        success {
+            // Cette commande (nécessite le plugin GitHub) notifie GitHub que c'est OK
+            echo 'Notification GitHub: SUCCESS'
+        }
+        failure {
+            echo 'Notification GitHub: FAILURE'
+        }
+    }
 }
