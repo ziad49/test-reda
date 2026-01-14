@@ -14,13 +14,15 @@ pipeline {
 
         stage('📦 Installation') {
             steps {
-                sh 'npm install'
+                // On utilise "bat" au lieu de "sh" pour Windows
+                bat 'npm install'
             }
         }
 
         stage('🧪 Tests Unitaires') {
             steps {
-                sh 'npm test'
+                // On utilise "bat" ici aussi
+                bat 'npm test'
             }
         }
 
