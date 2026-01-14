@@ -1,4 +1,4 @@
-// Fonction pour calculer les années d'expérience restantes jusqu'au stage
+// 1. Définition de la logique métier
 function getStatusMessage(year) {
     if (year < 2026) {
         return "En cours d'études à l'ISEN";
@@ -7,26 +7,12 @@ function getStatusMessage(year) {
     }
 }
 
-// Pour permettre les tests unitaires avec Node.js/Jest
-if (typeof module !== 'undefined') {
-    module.exports = { getStatusMessage };
-}
-
-// Fonction pour calculer les années d'expérience restantes jusqu'au stage
-function getStatusMessage(year) {
-    if (year < 2026) {
-        return "En cours d'études à l'ISEN";
-    } else {
-        return "Disponible pour stage de fin d'étude";
-    }
-}
-
-// Export pour Jest (Node.js)
+// 2. Export pour les tests Jenkins (Node.js)
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = { getStatusMessage };
 }
 
-// Exécution navigateur UNIQUEMENT (On vérifie si 'document' existe)
+// 3. Exécution pour le navigateur (Interface du portfolio)
 if (typeof document !== 'undefined') {
     document.addEventListener('DOMContentLoaded', () => {
         const display = document.getElementById('experience-summary');
