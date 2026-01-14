@@ -1,7 +1,6 @@
 pipeline {
     agent any
 
-    // Cette partie est cruciale pour corriger l'erreur du Build #1
     tools {
         nodejs 'node' 
     }
@@ -27,7 +26,7 @@ pipeline {
 
         stage('🚀 Déploiement Simulation') {
             steps {
-                echo '✅ Tests réussis ! Déploiement du portfolio de Ziad FREIJ en cours...' [cite: 30]
+                echo 'Tests réussis ! Déploiement du portfolio de Ziad FREIJ en cours...'
             }
         }
     }
